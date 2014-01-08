@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <!-- Modal Log In Form-->
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              </div>
+              <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                    <div class="col-sm-10">
+                      <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox"> Remember me
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-default">Sign in</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal login -->
+
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">  
+            
+            <div class="container">
+                    
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand nav-logo" href="#">Castle Lite Demo</a>
+                </div><!-- /Logo and main link-->           
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="#">LATEST MUSIC</a></li>
+                      <li><a href="#">HOW IT WORKS</a></li>
+                      <li><a href="#">FAQ</a></li>
+                    </ul>
+
+                    <form class="navbar-form navbar-right" role="search">
+                        
+                          <a class="btn btn-warning btn-sml" href="#" role="button" id="notifications" data-toggle="popover" title="Notifications" data-content="Jay Z and others up in the Hizzay!!!!" data-original-title="Notifications" data-placement="bottom">
+                              <span class="glyphicon glyphicon-exclamation-sign"></span>
+                              <span class="badge">42</span>
+                            </a><!-- /notifications -->                  
+
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Sign Up</button>
+                            <button type="submit" class="btn btn-warning" data-toggle="modal" data-target="#loginModal">Log In</button>
+                        </div>
+
+                    </form>
+
+                </div><!-- /main menu-->
+
+
+            </div><!-- /container -->
+
+        </div><!-- /navigation -->
+        
+        <div class="promotion-banner">
+            <div class="container">
+                
+            </div>
+        </div><!-- /promo-banner -->
+
+        <div class="container">
+            
+            <!-- LATEST TRACKS -->
+
+            <h3>LATEST TRACKS</h3>
+
+            <div class="row">
+              <div class="col-md-2 list-item music">
+                  <a class="list-item-link">
+                    <img src="img/tracks/crooked-full.jpg" alt="" width="100%" height="100%" />
+                  </a>
+                  <p class="text-left">J Cole - <strong>Crooked Smile</strong></p>
+                  <a class="btn btn-primary btn-sml" href="#" role="button">
+                    <span class="glyphicon glyphicon-play"></span>
+                  </a>
+                  <button type="button" class="btn btn-success btn-sml">
+                      <span class="glyphicon glyphicon-music"></span> Download
+                    </button>
+              </div>
+              <div class="col-md-2 list-item music">
+                  <a class="list-item-link">
+                    <img src="img/tracks/kingdom-come.jpg" alt="" width="100%" height="100%" />
+                  </a>
+                  <p class="text-left">JAY-Z - <strong>Kingdom Come</strong></p>
+                  <a class="btn btn-primary btn-sml" href="#" role="button">
+                    <span class="glyphicon glyphicon-play"></span>
+                  </a>
+                  <button type="button" class="btn btn-success btn-sml">
+                      <span class="glyphicon glyphicon-music"></span> Download
+                    </button>
+              </div>
+              <div class="col-md-2 list-item music">
+                  <a class="list-item-link">
+                    <img src="img/tracks/tml.jpg" alt="" width="100%" height="100%" />
+                  </a>
+                  <p class="text-left">DRAKE - <strong>Thank Me Later</strong></p>
+                  <a class="btn btn-primary btn-sml" href="#" role="button">
+                    <span class="glyphicon glyphicon-play"></span>
+                  </a>
+                  <button type="button" class="btn btn-success btn-sml">
+                      <span class="glyphicon glyphicon-music"></span> Download
+                    </button>
+              </div>
+              <div class="col-md-2 list-item music">
+                  <a class="list-item-link">
+                    <img src="img/tracks/mad-city.jpg" alt="" width="100%" height="100%" />
+                  </a>
+                  <p class="text-left">Kendrick Lamar - <strong>Good Kid</strong></p>
+                  <a class="btn btn-primary btn-sml" href="#" role="button">
+                    <span class="glyphicon glyphicon-play"></span>
+                  </a>
+                  <button type="button" class="btn btn-success btn-sml">
+                      <span class="glyphicon glyphicon-music"></span> Download
+                    </button>
+              </div>
+              <div class="col-md-2 list-item music">
+                  <a class="list-item-link">
+                    <img src="img/tracks/bruno.jpg" alt="" width="100%" height="100%" />
+                  </a>
+                  <p class="text-left">Bruno Mars - <strong>Unorthodox</strong></p>
+                  <a class="btn btn-primary btn-sml" href="#" role="button">
+                    <span class="glyphicon glyphicon-play"></span>
+                  </a>
+                  <button type="button" class="btn btn-success btn-sml">
+                      <span class="glyphicon glyphicon-music"></span> Download
+                    </button>
+              </div>
+            </div><!-- /tracks row          -->
+
+
+            <!-- LATEST NEWS -->
+
+            <h3>LATEST NEWS</h3>
+            <hr>
+
+            <div class="row news-items">
+              
+                <div class="col-md-8">
+                    
+                    <div class="embed-container">
+                        <iframe src="//www.youtube.com/embed/KY44zvhWhp4?feature=player_detailpage" frameborder="0" allowfullscreen></iframe>
+                    </div>
+
+                    <h4>New Lil Wayne Video Sneak Peek</h4>
+                    <p>
+                        <strong>Published on Feb 14, 2013</strong><br />
+    Music video by Lil Wayne performing Love Me (Explicit). © 2013 Cash Money Records Inc., under exclusive license to Universal Republic Records, a division of UMG Recordings, Inc
+                    </p>
+                    
+                    <hr>
+
+                    <div class="row">
+
+                        <div class="col-md-4 list-item tri-news">
+                            <img src="img/news/thumb.jpg" class="img-responsive img-thumbnail" alt="news" />
+                            <h5><strong>Eminem in hot water</strong></h5>
+                            <p>
+                                Lorem Ipsum Dolor sit amet consecteteur adipiscing elit.<br />
+                                <a href="#">>> Read more...</a>
+                            </p>
+                            <em>January 7th 2013</em>
+                        </div><!-- /news-item -->
+                        <div class="col-md-4 list-item tri-news">
+                            <img src="img/news/emile-thumb.jpg" class="img-responsive img-thumbnail" alt="news" />
+                            <h5><strong>Emile Sande is no clown</strong></h5>
+                            <p>
+                                Lorem Ipsum Dolor sit amet consecteteur adipiscing elit.<br />
+                                <a href="#">>> Read more...</a>
+                            </p>
+                            <em>January 7th 2013</em>
+                        </div><!-- /news-item -->
+                        <div class="col-md-4 list-item tri-news">
+                            <img src="img/news/thumb-will.jpg" class="img-responsive img-thumbnail" alt="news" />
+                            <h5><strong>Will Smith to release greatest hits album</strong></h5>
+                            <p>
+                                Lorem Ipsum Dolor sit amet consecteteur adipiscing elit.<br />
+                                <a href="#">>> Read more...</a>
+                            </p>
+                            <em>January 7th 2013</em>
+                        </div><!-- /news-item -->
+
+                    </div><!-- /three-column nested-row -->
+
+              </div><!-- /two-thirds -->    
+                
+              <div class="col-md-4 sidebar-news">
+                
+                <div class="list-item tri-news">
+                    <img src="img/news/kendrick.jpg" class="img-responsive img-thumbnail" alt="" />
+                    <h5><strong>Kendrick Lamar Announces SA Tour</strong></h5>
+                    <p>
+                      Lorem Ipsum Dolor sit amet consecteteur adipiscing elit.<br />
+                      <a href="#">>> Read more...</a>
+                    </p>
+                    <em>January 7th 2014</em>
+                </div>
+                <div class="list-item tri-news">
+                    <img src="img/news/jamie.jpg" class="img-responsive img-thumbnail" alt="" />
+                    <h5><strong>Jamie Foxx Announces SA Tour</strong></h5>
+                    <p>
+                      Lorem Ipsum Dolor sit amet consecteteur adipiscing elit.<br />
+                      <a href="#">>> Read more...</a>
+                    </p>
+                    <em>January 7th 2014</em>
+                </div>
+                <div class="list-item tri-news">
+                    <img src="img/news/beyonce.jpg" class="img-responsive img-thumbnail" alt="" />
+                    <h5><strong>Beyonce wins grammy</strong></h5>
+                    <p>
+                      Lorem Ipsum Dolor sit amet consecteteur adipiscing elit.<br />
+                      <a href="#">>> Read more...</a>
+                    </p>
+                    <em>January 7th 2014</em>
+                </div>
+
+              </div><!-- /one-third -->
+
+            </div><!-- /full-row -->
+        
+        </div><!-- /main container -->
+
+        <div id="footer" class="clearfix">
+            <div class="pull-left">
+                &copy; Copyright 2013 SAB Limited. <br/>
+                All rights reserved
+            </div>
+            <div class="pull-right">
+                ARA and other stuff here
+            </div>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
